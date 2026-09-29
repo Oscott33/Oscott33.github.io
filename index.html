@@ -3,100 +3,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Olivia Scott | ePortfolio</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <title>Olivia Scott Resume</title>
+
+    <style>
+        .project-section {
+            margin: 28px 0;
+        }
+
+        .project-card {
+            max-width: 700px;
+            padding: 18px;
+            border: 1px solid #cccccc;
+            border-left: 5px solid #006747;
+            border-radius: 8px;
+            background-color: #f8f9f7;
+        }
+
+        .project-card h3 {
+            margin-top: 0;
+        }
+
+        .project-button {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 10px 16px;
+            background-color: #006747;
+            color: #ffffff;
+            text-decoration: none;
+            border: 2px solid #006747;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .project-button:hover,
+        .project-button:focus {
+            background-color: #004b36;
+            border-color: #004b36;
+            color: #ffffff;
+        }
+    </style>
 </head>
-<body>
 
-<header>
-    <div class="container header-content">
-        <div>
-            <h1>Olivia Scott</h1>
-            <p>Information Science • Healthcare Informatics • Communication</p>
-        </div>
-        <nav>
-            <a href="#about">About Me</a>
-            <a href="about.html">My Story</a>
-            <a href="#skills">Skills</a>
-            <a href="#education">Education</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </div>
-</header>
+<body id="top">
 
-<main>
-    <section id="about" class="hero">
-        <div class="container">
-            <p class="eyebrow">WELCOME TO MY EPORTFOLIO</p>
-            <h2>About Me</h2>
+    <!-- Main Page -->
+    <h1>Olivia Scott</h1>
 
-            <p class="lead">
-                I am Olivia Scott, a senior at the University of South Florida pursuing a
-                Bachelor of Science in Information Science with a concentration in Healthcare
-                Informatics and a minor in Communications. My interests connect healthcare,
-                technology, communication, advocacy, and law.
+    <p>
+        <strong>Tampa, FL</strong> |
+        <em>Olivia.scott843@gmail.com</em>
+    </p>
+
+    <img
+        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='180'%3E%3Crect width='500' height='180' fill='%23e8f0fe'/%3E%3Ccircle cx='90' cy='90' r='50' fill='%234285f4'/%3E%3Ctext x='160' y='85' font-size='28' font-family='Arial' fill='%23333'%3EOlivia Scott%3C/text%3E%3Ctext x='160' y='120' font-size='18' font-family='Arial' fill='%23555'%3ERetail and Information Science Student%3C/text%3E%3C/svg%3E"
+        alt="Olivia Scott resume banner"
+        width="500"
+    >
+
+    <hr>
+
+    <!-- Objective -->
+    <h2>Objective</h2>
+
+    <p>
+        Motivated and dependable retail professional seeking a leadership
+        role where I can contribute to store operations, team development,
+        and customer satisfaction. I have a strong background in
+        <strong>merchandising</strong>,
+        <em>inventory management</em>, customer service, and team supervision.
+    </p>
+
+    <!-- Education -->
+    <h2>Education</h2>
+
+    <h3>University of South Florida</h3>
+
+    <p>
+        Bachelor of Science in Information Science — Current | GPA: 3.5
+    </p>
+
+    <h3>Hillsborough Community College</h3>
+
+    <p>
+        Associate of Science in Computer Engineering — 2023 | GPA: 3.5
+    </p>
+
+    <!-- Professional Experience -->
+    <h2>Professional Experience</h2>
+
+    <table border="1" cellpadding="8" cellspacing="0">
+
+        <tr>
+            <th>Position</th>
+            <th>Company</th>
+            <th>Location</th>
+            <th>Dates</th>
+        </tr>
+
+        <tr>
+            <td>Sales Associate</td>
+            <td>Aldi</td>
+            <td>Tampa, FL</td>
+            <td>10/2023 – Present</td>
+        </tr>
+
+        <tr>
+            <td>Merchandising Manager</td>
+            <td>OFFLINE</td>
+            <td>Tampa, FL</td>
+            <td>04/2023 – 10/2023</td>
+        </tr>
+
+        <tr>
+            <td>Senior Brand Associate</td>
+            <td>Aerie</td>
+            <td>Brandon, FL</td>
+            <td>07/2021 – 04/2023</td>
+        </tr>
+
+        <tr>
+            <td>Team Member</td>
+            <td>Chick-fil-A</td>
+            <td>Brandon, FL</td>
+            <td>11/2019 – 07/2021</td>
+        </tr>
+
+    </table>
+
+    <!-- Skills -->
+    <h2>Skills</h2>
+
+    <p>
+        Leadership • Customer Service • Merchandising • Inventory Management •
+        Team Collaboration • Organization • Troubleshooting • Adaptability
+    </p>
+
+    <!-- Projects -->
+    <section class="project-section" id="projects">
+
+        <h2>Projects</h2>
+
+        <div class="project-card">
+
+            <h3>
+                Project Management Plan:
+                Software-Tracking Database
+            </h3>
+
+            <p>
+                This project presents an implementation plan for developing
+                a software-tracking database for a college or university.
+                The plan applies the six project management phases described
+                by Baars (2006), including initiation, definition, design,
+                development, implementation, and follow-up.
             </p>
 
-            <p class="lead">
-                After completing my undergraduate degree, I plan to continue my education in
-                Healthcare Informatics before attending law school and pursuing a career in health law.
-            </p>
+            <a
+                class="project-button"
+                href="project-management-plan.html"
+            >
+                View Project Management Plan
+            </a>
 
-            <a class="button" href="about.html">Read My Full Bio</a>
         </div>
+
     </section>
 
-    <section id="skills">
-        <div class="container">
-            <p class="eyebrow">BACKGROUND</p>
-            <h2>Skills</h2>
+    <!-- USF Website -->
+    <p>
+        Visit my school website:
 
-            <div class="card-grid">
-                <div class="card">
-                    <h3>Technology</h3>
-                    <p>Java, C, SQL, Microsoft Access, databases, web development, and information systems.</p>
-                </div>
+        <a
+            href="https://www.usf.edu/"
+            target="_blank"
+            rel="noopener"
+        >
+            University of South Florida
+        </a>
+    </p>
 
-                <div class="card">
-                    <h3>Healthcare Informatics</h3>
-                    <p>Electronic health records, clinical information systems, health data, privacy, and security.</p>
-                </div>
+    <p>
+        <a href="#second-page">
+            Go to Page Two
+        </a>
+    </p>
 
-                <div class="card">
-                    <h3>Communication</h3>
-                    <p>Professional writing, interpersonal communication, audience awareness, leadership, and organization.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <hr>
 
-    <section id="education" class="section-alt">
-        <div class="container">
-            <p class="eyebrow">EDUCATION</p>
-            <h2>University of South Florida</h2>
+    <!-- Second Page Section -->
+    <h1 id="second-page">
+        Page Two: Additional Information
+    </h1>
 
-            <div class="education-box">
-                <p><strong>Bachelor of Science in Information Science</strong></p>
-                <p>Concentration: Healthcare Informatics</p>
-                <p>Minor: Communications</p>
-                <p>Expected Graduation: Fall 2026</p>
-            </div>
-        </div>
-    </section>
+    <!-- Certifications -->
+    <h2>Certifications</h2>
 
-    <section id="contact">
-        <div class="container">
-            <p class="eyebrow">CONNECT</p>
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:oscott33@usf.edu">oscott33@usf.edu</a></p>
-            <p>GitHub: <a href="https://github.com/oscott33" target="_blank" rel="noopener">github.com/oscott33</a></p>
-        </div>
-    </section>
-</main>
+    <p>
+        Adobe Certified Professional in InDesign, Microsoft Word,
+        PowerPoint, and Outlook — Certiport, 2021.
+    </p>
 
-<footer>
-    <p>&copy; 2026 Olivia Scott. ePortfolio.</p>
-</footer>
+    <!-- Career Summary -->
+    <h2>Career Summary</h2>
+
+    <h3>Professional Strengths</h3>
+
+    <p>
+        I have experience supporting store operations, training team members,
+        organizing inventory, and maintaining strong customer service
+        standards. My background combines retail leadership with information
+        science and technical skills.
+    </p>
+
+    <p>
+        <a href="#top">
+            Back to Page One
+        </a>
+    </p>
 
 </body>
 </html>
