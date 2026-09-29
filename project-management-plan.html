@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Olivia Scott's Project Management Plan for a hypothetical university software-tracking database.">
+  <title>Software-Tracking Database Project Management Plan | Olivia Scott</title>
+  <style>
+    :root {
+      --usf-green: #006747;
+      --usf-dark: #004b36;
+      --usf-gold: #cfc493;
+      --ink: #202623;
+      --muted: #65706a;
+      --paper: #ffffff;
+      --page: #f5f6f3;
+      --line: #d9dfda;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--ink);
+      background: var(--page);
+      line-height: 1.75;
+    }
+
+    .site-header {
+      background: var(--usf-green);
+      color: white;
+      border-bottom: 5px solid var(--usf-gold);
+    }
+
+    .header-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 1rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      letter-spacing: .03em;
+    }
+
+    .back-link {
+      color: white;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: .95rem;
+      border: 1px solid rgba(255,255,255,.65);
+      border-radius: 999px;
+      padding: .45rem .8rem;
+    }
+
+    .back-link:hover,
+    .back-link:focus {
+      background: white;
+      color: var(--usf-dark);
+      outline: none;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto 3rem;
+      padding: 0 1.25rem;
+    }
+
+    .paper {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      box-shadow: 0 14px 38px rgba(0, 50, 35, .08);
+      padding: clamp(1.5rem, 4vw, 3.5rem);
+    }
+
+    .eyebrow {
+      margin: 0 0 .4rem;
+      color: var(--usf-green);
+      font: 700 .78rem/1.3 Arial, Helvetica, sans-serif;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      color: var(--usf-dark);
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.15;
+    }
+
+    .author {
+      margin: .7rem 0 2.1rem;
+      color: var(--muted);
+      font: 600 1rem/1.4 Arial, Helvetica, sans-serif;
+    }
+
+    h2 {
+      margin: 2.25rem 0 .75rem;
+      padding-bottom: .35rem;
+      color: var(--usf-dark);
+      font-size: 1.35rem;
+      line-height: 1.3;
+      border-bottom: 2px solid var(--usf-gold);
+    }
+
+    p {
+      margin: 0 0 1.15rem;
+    }
+
+    .reference {
+      padding-left: 1.5rem;
+      text-indent: -1.5rem;
+      overflow-wrap: anywhere;
+    }
+
+    a {
+      color: var(--usf-green);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 2px;
+    }
+
+    a:hover,
+    a:focus {
+      color: var(--usf-dark);
+    }
+
+    .page-tools {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .7rem;
+      margin: 0 0 1.4rem;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .button {
+      display: inline-block;
+      border: 1px solid var(--usf-green);
+      border-radius: 8px;
+      padding: .55rem .85rem;
+      color: var(--usf-green);
+      background: white;
+      text-decoration: none;
+      font-size: .9rem;
+      cursor: pointer;
+    }
+
+    .button:hover,
+    .button:focus {
+      color: white;
+      background: var(--usf-green);
+    }
+
+    footer {
+      max-width: 900px;
+      margin: 0 auto 2rem;
+      padding: 0 1.25rem;
+      color: var(--muted);
+      text-align: center;
+      font: .85rem/1.5 Arial, Helvetica, sans-serif;
+    }
+
+    @media (max-width: 600px) {
+      .header-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      main {
+        margin-top: 1rem;
+      }
+
+      .paper {
+        border-radius: 10px;
+      }
+    }
+
+    @media print {
+      body {
+        background: white;
+      }
+
+      .site-header,
+      .page-tools,
+      footer {
+        display: none;
+      }
+
+      main {
+        max-width: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .paper {
+        border: 0;
+        box-shadow: none;
+        padding: 0;
+      }
+
+      h2 {
+        break-after: avoid;
+      }
+
+      p {
+        orphans: 3;
+        widows: 3;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">Olivia Scott | ePortfolio</div>
+      <a class="back-link" href="index.html">&larr; Back to Portfolio</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-tools">
+      <a class="button" href="index.html">Portfolio Home</a>
+      <button class="button" type="button" onclick="window.print()">Print / Save as PDF</button>
+    </div>
+
+    <article class="paper">
+      <p class="eyebrow">Project Management Plan</p>
+      <h1>Software-Tracking Database Project Management Plan</h1>
+      <p class="author">Olivia Scott</p>
+
+      <h2>Introduction</h2>
+<p>If I were leading this project, my job would be to turn a broad request—track the university&#x27;s software—into work the team can realistically complete and maintain. The proposed database would be managed by the IT department and would provide a reliable record of software that is owned, licensed, rented, or otherwise used across academic and administrative units. Records could include titles and versions, developers, licensing agreements, departments using each product, assigned devices, and installation dates. At a large university, that information may come from several different sources, so coordination matters as much as the technology itself. This plan focuses on managing the project rather than building the database. Baars (2006) explains that dividing a project into phases makes it easier to organize and monitor. I would follow the six required phases: initiation, definition, design, development, implementation, and follow-up. After each approved phase, the team would also add a completely unnecessary rose icon to the project board.</p>
+<h2>Initiation Phase</h2>
+<p>The first question would not be how to build the database. It would be whether the university has a clear need for it, enough support, and a realistic scope. Baars (2006) describes initiation as the phase in which the idea, feasibility, participants, and organizational support are explored. I would meet with the CIO or IT director, software asset staff, procurement, information security, finance, legal or compliance staff, and representatives from academic and administrative departments. Together, we would define the problem. Software information might currently be scattered across purchasing systems, department spreadsheets, endpoint tools, and individual records, making it harder to know what the university owns and where it is installed. I would prepare a project proposal, preliminary budget and schedule, stakeholder list, and risk log. Risks could include incomplete records, decentralized purchasing, complicated license terms, limited staffing, and disruption during busy academic periods. Replacing procurement or help-desk systems would remain outside the scope. Sponsor approval would end the phase, along with the project&#x27;s first decorative rose.</p>
+<h2>Definition Phase</h2>
+<p>Once the project is approved, the next challenge is deciding exactly what “track the software” means to the people who will use the system. Baars (2006) emphasizes defining requirements early and involving future users. I would bring together central IT, department IT coordinators, procurement and licensing staff, information security, finance, and employees who will maintain or search the records. Their input would determine required information, permissions, update schedules, reports, data ownership, and correction procedures. Higher education also brings specific needs, including computer labs, faculty and staff devices, research applications, cloud subscriptions, and purchases made by individual colleges or departments. Licensing records might include site licenses, subscriptions, concurrent-user agreements, and per-user or per-device licenses. A dependable inventory also aligns with NIST Cybersecurity Framework 2.0 Asset Management outcome ID.AM-02, which calls for inventories of software, services, and systems (National Institute of Standards and Technology [NIST], 2024). The phase would end with approved requirements and acceptance criteria—also known, for no practical reason, as the team&#x27;s “rose packet.”</p>
+<h2>Design Phase</h2>
+<p>With the requirements settled, the team could decide how the overall solution should work. Baars (2006) notes that the design phase may include more than one possible design before a final approach is selected. The database administrator and systems analyst would lead this work, while software asset staff, information security, and selected users reviewed the proposed approach. Since the assignment focuses on project management rather than database construction, I would keep the work at the planning level. The team would map workflows, define user roles, create screen or report mock-ups, outline data migration, and plan how information may be received from procurement or device-management systems. I would schedule a formal design review so key decisions are documented instead of being left to informal conversations. Role-based access, data ownership, usability, backups, and audit needs would all be considered before approval. Deliverables would include the solution design, security and access plan, migration plan, test strategy, and updated schedule. A rose doodle on the sign-off sheet could mark approval, but flowers would stay out of the actual database.</p>
+<h2>Development Phase</h2>
+<p>The development phase is easy to misread because, in Baars&#x27;s (2006) model, the finished product is not being built yet. This stage prepares everything needed for implementation. I would turn the approved design into a detailed work plan, assign owners and deadlines, and identify important dependencies. The database administrator, application developer or specialist, security analyst, software asset manager, and migration staff would each receive clearly defined responsibilities. Department IT contacts would clean and organize existing software records while the project team prepared test scripts, training materials, support procedures, and user communications. I would also organize a pilot that represents different parts of the institution, such as one academic department, one administrative office, and one computer lab. Success measures would include record accuracy, completion of required information, successful searches and reports, common task completion, and defects discovered. Before moving forward, a readiness review would confirm that staff, documentation, test data, training, and support coverage are prepared. The phase would produce the implementation schedule, pilot plan, test materials, communication plan, and readiness approval. A vase of roses at that meeting would still have no effect on the critical path.</p>
+<h2>Implementation Phase</h2>
+<p>Implementation is where the planning becomes a working system. Baars (2006) describes this as the phase in which the project result is constructed and evaluated against the approved requirements and design. The database administrator and application developer or specialist would build and configure the database, the migration team would load prepared records, and the security analyst would establish approved access controls. Rather than moving immediately to a university-wide launch, I would run the planned pilot first. Users would receive training, complete realistic tasks, verify migrated records, and report problems. Significant issues would be corrected and retested before rollout continued. A staged launch would reduce disruption and make it easier to avoid especially busy academic periods. Department IT contacts would verify records, licensing staff would confirm agreement information, and security staff would review access and audit controls. Throughout the rollout, I would monitor schedule, budget, risks, defects, and user feedback and report progress to the sponsor. Deliverables would include the completed database, pilot results, issue resolutions, user acceptance, migrated records, training, and production launch. Verified departments could earn a rose icon on the status board, although it would remain purely decorative.</p>
+<h2>Follow-Up Phase</h2>
+<p>Launching the database would not mean the work is finished. A software inventory can become outdated quickly if nobody is responsible for maintaining it, which is why the follow-up phase matters. Baars (2006) includes training, support, maintenance, evaluation, reporting, and transfer of responsibility in this stage. I would assign long-term ownership to the appropriate IT software asset management unit and make sure database and help-desk staff have clear support procedures. Routine work would include reviewing records, reconciling license information, removing obsolete entries, and adding newly approved software. This also aligns with NIST CSF 2.0 outcome ID.AM-08, which addresses managing systems, hardware, software, services, and data throughout their life cycles (NIST, 2024). About 30 to 60 days after launch, I would review data accuracy, user adoption, support requests, unresolved defects, schedule performance, and budget performance. Lessons learned would be documented for future IT projects. Final deliverables would include maintenance documentation, the final report, ownership transfer, lessons learned, and archived project records. One last rose marker could signal both project closure and the end of the flower theme.</p>
+<h2>Conclusion</h2>
+<p>A university software-tracking project involves more than deciding what fields belong in a database. It requires coordination among IT, departments, procurement, licensing, information security, and the people responsible for maintaining the records. Baars&#x27;s (2006) six phases provide a logical path from the original idea through implementation and long-term support. They also create points where the team can review decisions, confirm readiness, and address problems before moving forward. If I were managing the project, that structure would help keep the scope realistic while ensuring the final system has both an owner and a maintenance plan. The roses, of course, would still be decorative.</p>
+<h2>References</h2>
+<p class="reference">Baars, W. (2006). Project management handbook (Version 1.1). DANS – Data Archiving and Networked Services. <a href="https://textbookequity.org/Textbooks/Baars_book_project_management.pdf" target="_blank" rel="noopener">https://textbookequity.org/Textbooks/Baars_book_project_management.pdf</a></p>
+<p class="reference">National Institute of Standards and Technology. (2024). The NIST Cybersecurity Framework (CSF) 2.0 (NIST CSWP 29). <a href="https://doi.org/10.6028/NIST.CSWP.29" target="_blank" rel="noopener">https://doi.org/10.6028/NIST.CSWP.29</a></p>
+    </article>
+  </main>
+
+  <footer>
+    <p>Olivia Scott ePortfolio &middot; <a href="https://oscott33.github.io">oscott33.github.io</a></p>
+  </footer>
+</body>
+</html>
